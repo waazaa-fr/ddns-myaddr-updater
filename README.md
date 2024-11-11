@@ -1,6 +1,6 @@
 **ddns-myaddr-updater**
 
-Docker image on Docker HUB: https://hub.docker.com/repository/docker/waazaafr/ddns-myaddr-updater/general
+Docker image on Docker HUB: https://hub.docker.com/r/waazaafr/ddns-myaddr-updater
 
 
 
