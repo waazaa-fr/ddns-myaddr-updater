@@ -28,7 +28,7 @@ In this example "example1.myaddr.tools" is just a name easy to remember for you 
 
 
 For **IPv4** and **IPv6** you can choose between:
-- **auto** - ip if changed retrieved using https://api.ipify.org for ipv4 and https://api64.ipify.org for ipv6
+- **auto** - ip is updated if changed retrieved using https://api.ipify.org for ipv4 and https://api64.ipify.org for ipv6
 - **xxxx** - you set a fixed ip yourself
 - **none** - no POST API call for it
 
