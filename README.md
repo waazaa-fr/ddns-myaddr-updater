@@ -42,5 +42,7 @@ Each config node is launched every 15 mn.
 **Docker run**
 
 ```bash
-docker run -it --rm --name ddns-myaddr -e DDNS_MYADDR_KEY=XXXXYYYY -v /mnt/user/appdata/ddns-myaddr-updater:/config waazaafr/ddns-myaddr-updater:latest
+docker run -it --rm --name ddns-myaddr v /mnt/user/appdata/ddns-myaddr-updater:/config waazaafr/ddns-myaddr-updater:latest
 ```
+
+In this run command /mnt/user/appdata/ddns-myaddr-updater must contains config.yml
