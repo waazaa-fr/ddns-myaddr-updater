@@ -1,3 +1,46 @@
 **ddns-myaddr-updater**
 
-Client pour mettre à jour l'entrée DNS chez https://myaddr.tools
+
+This is a simple client to update DNS entry offered by https://myaddr.tools (thx to him).
+
+
+You must create a config.yml containing your configuration for multiple updates.
+
+Example of config.yml:
+```yml
+example1.myaddr.tools:
+  KEY: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+  IPv4: auto
+  IPv6: "fe80::1"
+  NO_UPDATE_LIMIT: 30
+example2.myaddr.tools:
+  KEY: YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY
+  IPv4: auto
+  IPv6: none
+  NO_UPDATE_LIMIT: 30
+```
+
+In this example "example1.myaddr.tools" is just a name easy to remember for you for logging purpose only.
+
+
+
+**KEY** is the myaddr.tools API KEY obtained by claiming a subdomain.
+
+
+For **IPv4** and **IPv6** you can choose between:
+- **auto** - ip if retrieved using https://api.ipify.org
+- **xxxx** - you set a fixed ip yourself
+- **none** - no POST API call for it
+
+
+**NO_UPDATE_LIMIT** is the number of day between 2 POST API call if ip is unchanged a force call is done.
+
+
+Each config node is launched every 15 mn.
+
+
+**Docker run**
+
+```bash
+docker run -it --rm --name ddns-myaddr -e DDNS_MYADDR_KEY=XXXXYYYY -v /mnt/user/appdata/ddns-myaddr-updater:/config waazaafr/ddns-myaddr-updater:latest
+```
