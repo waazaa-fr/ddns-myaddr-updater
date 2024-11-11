@@ -1,7 +1,7 @@
 **ddns-myaddr-updater**
 
 
-This is a simple client to update DNS entry offered by https://myaddr.tools (thx to him).
+This is a simple client to update DNS entries offered by https://myaddr.tools (thx to him).
 
 
 You must create a config.yml containing your configuration for multiple updates.
