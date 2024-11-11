@@ -1,5 +1,8 @@
 **ddns-myaddr-updater**
 
+Docker image on Docker HUB: https://hub.docker.com/repository/docker/waazaafr/ddns-myaddr-updater/general
+
+
 
 This is a simple client to update DNS entries offered by https://myaddr.tools (thx to him).
 
