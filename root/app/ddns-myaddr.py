@@ -72,7 +72,7 @@ def process_configuration(name, config):
                     logging.info(f"{name} - IPv6 set to : {ipv6_action}, Response : {result}")
                 last_ipv6 = ipv6_action
                 last_update_ipv6_time = current_time
-
+        
         time.sleep(15 * 60)  # Vérifie tous les 15 minutes
 
 if __name__ == '__main__':
